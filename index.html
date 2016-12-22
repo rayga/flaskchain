@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    {% block head %}
+    <title>General Setting ChaosIPS</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+    {% endblock %}
+</head>
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="home">Home</a>
+                    </li>
+                    <li role="presentation"><a href="rules">Rules</a>
+                    </li>
+                    <li role="presentation"><a href="outputs">Outputs</a></li>
+                    <li role="presentation"><a href="stream">Stream-Engine</a></li>
+                    <li role="presentation"><a href="defrag">Ip Defrag</a></li>
+                    <li role="presentation"><a href="nfq">NFQ</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">ChaosIPS</h3>
+        </div>
+
+        <div id="content">
+        {% block content %}{% endblock %}
+        </div>
+ 
+        
+        <footer class="footer">
+            <p>&copy; Company 2015</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>

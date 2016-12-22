@@ -1,0 +1,84 @@
+{% extends "index.html" %}
+{% block title %}index{% endblock %}
+{% block head %}
+  {{ super() }}
+
+{% endblock %}
+{% block content %}
+
+<div class = "row">
+	<div class = "col-md-6">
+	
+ <strong>default-rule-path  : /etc/suricata/rules</strong>
+ <p><strong>rule-files      : </strong></p>
+ 	</div>
+
+</div>
+
+<div class = "row">
+	<div class = "col-md-6">
+
+ <ul class ="list-unstyled">
+ <li>botcc.rules</li> 
+ <li>ciarmy.rules</li> 
+ <li>compromised.rules</li> 
+ <li>drop.rules</li> 
+ <li>dshield.rules</li> 
+ <li>emerging-activex.rules</li> 
+ <li>emerging-attack_response.rules</li> 
+ <li>emerging-chat.rules</li> 
+ <li>emerging-current_events.rules</li> 
+ <li>emerging-dns.rules</li> 
+ <li>emerging-dos.rules</li> 
+ <li>emerging-exploit.rules</li> 
+ <li>emerging-ftp.rules</li> 
+ <li>emerging-games.rules</li> 
+ <li>emerging-icmp_info.rules</li> 
+ <li>emerging-icmp.rules</li> 
+ <li>emerging-imap.rules</li> 
+ <li>emerging-inappropriate.rules</li> 
+ <li>emerging-malware.rules</li> 
+ <li>emerging-misc.rules</li> 
+ <li>emerging-mobile_malware.rules</li> 
+ <li>emerging-netbios.rules</li> 
+ <li>emerging-p2p.rules</li> 
+ <li>emerging-policy.rules</li> 
+</ul>
+	</div>
+
+<div class = "col-md-6">
+<ul class = "list-unstyled">
+ <li>emerging-pop3.rules</li> 
+ <li>emerging-rpc.rules</li> 
+ <li>emerging-scada.rules</li> 
+ <li>emerging-scan.rules</li> 
+ <li>emerging-shellcode.rules</li> 
+ <li>emerging-smtp.rules</li> 
+ <li>emerging-snmp.rules</li> 
+ <li>emerging-sql.rules</li> 
+ <li>emerging-telnet.rules</li> 
+ <li>emerging-tftp.rules</li> 
+ <li>emerging-trojan.rules</li> 
+ <li>emerging-user_agents.rules</li> 
+ <li>emerging-voip.rules</li> 
+ <li>emerging-web_client.rules</li> 
+ <li>emerging-web_server.rules</li> 
+ <li>emerging-web_specific_apps.rules</li> 
+ <li>emerging-worm.rules</li> 
+ <li>tor.rules</li> 
+ <li>decoder-events.rules</li>  
+ <li>stream-events.rules</li>   
+ <li>http-events.rules</li>     
+ <li>smtp-events.rules</li>     
+ <li>dns-events.rules</li>      
+ <li>tls-events.rules</li>  
+</ul>
+ </div>    
+
+ </div>
+
+{% endblock %}
+
+
+
+

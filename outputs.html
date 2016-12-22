@@ -1,0 +1,58 @@
+{% extends "index.html" %}
+{% block title %}index{% endblock %}
+{% block head %}
+  {{ super() }}
+
+{% endblock %}
+{% block content %}
+
+<div class="row" >
+	<div class = "col-md-4">
+	<b>fast.log Output</b>
+	<pre> enabled  : yes | no </pre>
+	<pre> append   : yes | no </pre>
+	<pre> filename : </pre>
+	</div>
+
+	<div class = "col-md-4">
+	<b>eve-log Output</b>
+	<pre> enabled  : yes | no </pre>
+	<pre> type     : file </pre>
+	<pre> filename : </pre>
+	</div>
+
+	<div class = "col-md-4">
+	<b>unified.log Output</b>
+	<pre> enabled  : yes | no </pre>
+	<pre> limit    : 32  </pre>
+	<pre> filename : unified.log </pre>
+	</div>
+</div>
+
+<div class="row">
+	<div class = "col-md-4">
+	<b>http.log Output</b>
+	<pre> enabled  : yes </pre>
+	<pre> append   : yes | no </pre>
+	<pre> extended : yes </pre>
+	<pre> filename : http.log </pre>
+	</div>
+
+	<div class = "col-md-4">
+	<b>dns.log Output</b>
+	<pre> enabled  : yes | no </pre>
+	<pre> append   : yes | no </pre>
+	<pre> filename : </pre>
+	<pre> filteype : reguler | unix_stream | unix_dgram </pre>
+	</div>
+
+	<div class = "col-md-4">
+	<b>pcap-log Output</b>
+	<pre> enabled  : yes | no </pre>
+	<pre> filename : </pre>
+	<pre> limit(MB): 32 | 64 | 128 </pre>
+	</div>
+	
+</div>
+
+{% endblock %}
